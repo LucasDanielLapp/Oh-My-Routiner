@@ -1,0 +1,11 @@
+/*Main*/
+.Task{
+    width: 95%;
+}
+.Task:focus{
+    outline: none;
+}
+/*button finish*/
+.listo{
+    margin-top: -100px;
+}
