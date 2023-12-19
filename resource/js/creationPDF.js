@@ -23,13 +23,13 @@ function crearInput(){
           taskNum += 1;
          // Aquí puedes realizar operaciones con cada elemento seleccionado, por ejemplo:
          // Agregar contenido, modificar estilos, etc.
-         elemento.innerHTML +='<td> <input type="text" name="taskNum'+taskNum+'" placeholder="Task '+ taskNum +'" class="Task '+ taskNum +'"</td>';
+         elemento.innerHTML +='<td> <input type="text" name="Task'+taskNum+'" placeholder="Task '+ taskNum +'" class="Task '+ taskNum +'"</td>';
      });
      hourNum += 1;
-     tableNum.innerHTML +='<td><input type="time" name="hour'+hourNum+'" placeholder="06:00/07:00" class="hour' + hourNum +'"</td>';     
+     tableNum.innerHTML +='<td><input type="time" name="hour'+hourNum+'" class="hour' + hourNum +'"</td>';     
      rowAndColumn.innerHTML = '<input name="taskNum" value="'+ taskNum + '">';
      rowAndColumn.innerHTML += '<input name="hourNum" value="' + hourNum + '">';
-     rowAndColumn.style.opacity = 0;
+     rowAndColumn.style.opacity = 1;
      return taskNum,hourNum;
 }
 //code

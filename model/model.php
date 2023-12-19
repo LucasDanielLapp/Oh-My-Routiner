@@ -13,7 +13,8 @@
         $taskNum = $_GET['taskNum'];
         $hourNum = $_GET['hourNum'];
         //recorrer las filas
-        for($i = 1;$i < $taskNum;$i++){
+        echo $taskNum;
+        for($i = 0;$i <= $taskNum;$i++){
           //recorremos las columnas
           $Task = $_GET['Task'.$i];
           echo $Task;
