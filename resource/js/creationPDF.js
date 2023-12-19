@@ -10,27 +10,27 @@ const rowOne = document.querySelector('.rowOne');
 const tableNum = document.querySelector('.table-num');
 const rowAndColumn = document.querySelector('.rowAndColumn');
 //contar los elementos seleccionado
-let taskNum = 5;
-let hourNum = 1;
+let rows = 5;
+let columns = 1;
 //
-rowAndColumn.innerHTML += '<input name="taskNum" value="' + taskNum + '">';
-rowAndColumn.innerHTML += '<input name="hourNum" value="' + hourNum + '">';
+rowAndColumn.innerHTML += '<input name="rows" value="' + rows + '">';
+rowAndColumn.innerHTML += '<input name="columns" value="' + columns + '">';
 rowAndColumn.style.opacity = 0;
 //cada 5 taskNum hay un un horario
 
 function crearInput(){
      elementosDiv.forEach(elemento => {
-          taskNum += 1;
+          rows += 1;
          // Aquí puedes realizar operaciones con cada elemento seleccionado, por ejemplo:
          // Agregar contenido, modificar estilos, etc.
-         elemento.innerHTML +='<td> <input type="text" name="Task'+taskNum+'" placeholder="Task '+ taskNum +'" class="Task '+ taskNum +'"</td>';
+         elemento.innerHTML +='<td> <input type="text" name="rows'+rows+'" placeholder="Task '+ rows +'" class="Task'+ rows +'"</td>';
      });
-     hourNum += 1;
-     tableNum.innerHTML +='<td><input type="time" name="hour'+hourNum+'" class="hour' + hourNum +'"</td>';     
-     rowAndColumn.innerHTML = '<input name="taskNum" value="'+ taskNum + '">';
-     rowAndColumn.innerHTML += '<input name="hourNum" value="' + hourNum + '">';
-     rowAndColumn.style.opacity = 1;
-     return taskNum,hourNum;
+     columns += 1;
+     tableNum.innerHTML +='<td><input type="time" name="columns'+columns+'" class="hour' + columns +'"</td>';     
+     rowAndColumn.innerHTML = '<input name="rows" value="'+ rows + '">';
+     rowAndColumn.innerHTML += '<input name="columns" value="'+ columns+'">';
+     rowAndColumn.style.opacity = 0;
+     return rows,columns;
 }
 //code
 buttonsAdd.forEach(button => {

@@ -1,4 +1,6 @@
 <?php
+//Framework
+require('resource/FPDF/fpdf.php');
 //Llamamos a el controler
 require('model/model.php');
 require('controler/controler.php');

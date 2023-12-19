@@ -7,22 +7,23 @@
         $module = "view/pages/".$enlace.".php" ;
       }else{
         $module = "view/pages/"."Home".".php";
-      }if(isset($_GET['hour1'])){//Esta ùltmica verificaciòn es la que se envia desde el formalario
+      }if(isset($_GET['columns'])){//Esta ùltmica verificaciòn es la que se envia desde el formalario
         //Aca estamos verificaondo si se mando informacion por url , si es asi lo re dirijimos a la pàgina de result
         //Primero antes de saber el valor de los datos hay que contar las filas y columnas
-        $taskNum = $_GET['taskNum'];
-        $hourNum = $_GET['hourNum'];
+        $columns = $_GET['columns'];
+        $rows = $_GET['rows'];
+        //llamas al framework
+
         //recorrer las filas
-        echo $taskNum;
-        for($i = 0;$i <= $taskNum;$i++){
+        for($i = 0;$i <= $rows;$i++){
           //recorremos las columnas
-          $Task = $_GET['Task'.$i];
+          $Task = $_GET['rows'.$i];
           echo $Task;
         }
-        for($j = 0; $j < $hourNum ; $j++){
-          //recoremos las filas
-          $hora = $_GET['hour1'];
-          echo $hora;
+        for($j = 1;$j <= $columns;$j++){
+          //recorremos las columnas
+          $hour = $_GET['columns'.$j];
+          echo $hour;
         }
         $module = 'view/pages/result.php';
       }

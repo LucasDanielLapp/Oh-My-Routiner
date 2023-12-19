@@ -12,12 +12,12 @@
                 <td>Viernes</td>
             </tr>
             <tr class="rowOne"> <!-- Segunda fila -->
-                <td><input type="time" class="hour" name="hour1"></td>
-                <td><input type="text" placeholder="Task 1" class="Task Task1" name="Task1"></td>
-                <td><input type="text" placeholder="Task 2" class="Task Task2" name="Task2"></td>
-                <td><input type="text" placeholder="Task 3" class="Task Task3" name="Task3"></td>
-                <td><input type="text" placeholder="Task 4" class="Task Task4" name="Task4"></td>
-                <td><input type="text" placeholder="Task 5" class="Task Task5" name="Task5"></td>
+                <td><input type="time" class="hour" name="columns1"></td>
+                <td><input type="text" placeholder="Task 1" class="Task Task1" name="rows1"></td>
+                <td><input type="text" placeholder="Task 2" class="Task Task2" name="rows2"></td>
+                <td><input type="text" placeholder="Task 3" class="Task Task3" name="rows3"></td>
+                <td><input type="text" placeholder="Task 4" class="Task Task4" name="rows4"></td>
+                <td><input type="text" placeholder="Task 5" class="Task Task5" name="rows5"></td>
             </tr>
             <tr class="rowTwo"> <!-- Tercera fila -->
                 <td><div class="table-num"></div></td>
@@ -30,7 +30,6 @@
         </table>
         <button type="button" class="addInput" name="#" id="#">+</button>
         <button type="submit" class="listo">¡ Listo !</button>
-
         <div class="rowAndColumn"></div>
     </form>
     <script src="resource/js/creationPDF.js"></script>
