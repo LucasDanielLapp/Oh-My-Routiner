@@ -3,6 +3,7 @@ class Controler{
 	public function Plantilla(){
 		require('view/view.php');
 	}
+
 	public function EnlaceControler(){
 		//Una vez màs estamos verificando (ya lo estabamos verificando en model) si la variable GET no trae un resultado
 		//Ve a la pàgina index
@@ -18,6 +19,10 @@ class Controler{
 		//Verificamos si mandamos los datos del furmario antes,para saber a que pàgina mandamos 
 		include ($res);
 		//Recuerda que esto es solo para segurity url no segurity fill, eso se configura en tu servidor de perferencia(apache server)
+	}
+
+	public function PDF(){
+		EnlacesPagina::CreationPDF();
 	}
 }
 ?>
