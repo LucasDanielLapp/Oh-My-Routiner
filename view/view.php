@@ -14,7 +14,7 @@ if($res = 'view/pages/result.php'){
     mucho mejor nuestro timepo. Permitìendonos incluso poder descargarlo para siempre tener a mano nuestra rutina personlizable.">
     <meta name="keywords" content="oh my routiner">
     <meta name="robots" content="index"/>
-    <link rel="stylesheet" type="text/css" href="resource/css/<?php echo $cssName ?>.css">
+    <link rel="stylesheet" type="text/css" href="resource/css/<?php echo $cssName; ?>.css">
     <title>oh my routiner</title>
 </head>
 <body>

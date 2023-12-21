@@ -3,12 +3,15 @@
 console.log("Hello world");
 //calst
 //Recordemos que querySelectorAll evuelve un array
-const buttonsAdd = document.querySelectorAll('.addInput');
 //asi selecionamos un elemento dentro de una table 
 const elementosDiv = document.querySelectorAll('td > .table');
 const rowOne = document.querySelector('.rowOne');
 const tableNum = document.querySelector('.table-num');
 const rowAndColumn = document.querySelector('.rowAndColumn');
+
+
+const buttonsAdd = document.querySelectorAll('.addInput');
+
 //contar los elementos seleccionado
 let rows = 5;
 let columns = 1;
@@ -23,10 +26,11 @@ function crearInput(){
           rows += 1;
          // Aquí puedes realizar operaciones con cada elemento seleccionado, por ejemplo:
          // Agregar contenido, modificar estilos, etc.
-         elemento.innerHTML +='<td> <input type="text" name="rows'+rows+'" placeholder="Task '+ rows +'" class="Task'+ rows +'"</td>';
+         elemento.innerHTML +='<td><input type="text" name="rows'+rows+'" placeholder="Task '+ rows +'"></td>';
      });
      columns += 1;
-     tableNum.innerHTML +='<td><input type="time" name="columns'+columns+'" class="hour' + columns +'"</td>';     
+     tableNum.innerHTML +='<td><input type="time" name="columns'+columns+'"></td>';     
+     //input que me dicen la catidad no mas
      rowAndColumn.innerHTML = '<input name="rows" value="'+ rows + '">';
      rowAndColumn.innerHTML += '<input name="columns" value="'+ columns+'">';
      rowAndColumn.style.opacity = 0;

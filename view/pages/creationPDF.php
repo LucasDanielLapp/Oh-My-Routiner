@@ -20,7 +20,7 @@
                 <td><input type="text" placeholder="Task 5" class="Task Task5" name="rows5"></td>
             </tr>
             <tr class="rowTwo"> <!-- Tercera fila -->
-                <td><div class="table-num"></div></td>
+                <td class="table-num"></td>
                 <td><div class="table"></div></td>
                 <td><div class="table"></div></td>
                 <td><div class="table"></div></td>
