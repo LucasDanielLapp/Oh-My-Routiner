@@ -18,6 +18,7 @@ if(isset($_GET['action'])){
     <link rel="stylesheet" type="text/css" href="resource/bootstrap5/css/bootstrap.min.css">
     <!--Style native -->
     <link rel="stylesheet" type="text/css" href="resource/css/<?php echo $cssName; ?>.css">
+    <link rel="icon" href="resource/icon-img/icono.ico" type="image/png">
     <title>oh my routiner</title>
 </head>
 <body>

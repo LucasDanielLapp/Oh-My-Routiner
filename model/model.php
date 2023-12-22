@@ -19,8 +19,6 @@
         $pdf = new FPDF();
         $pdf->AddPage();
         $pdf->SetFont('Arial','B',10);
-        $pdf->setX(25);
-        $pdf->Cell(32,10,'Gracias por utilizar nuestro servicios',0,1,'C');
         $pdf->Cell(32,10,'Horario',1,0,'C');
         $pdf->Cell(32,10,'Lunes',1,0,'C');
         $pdf->Cell(32,10,'Martes',1,0,'C');
@@ -46,6 +44,8 @@
             $pdf->setX(42,30);
           }
         }
+        $pdf->setX(25);
+        $pdf->Cell(32,10,'Gracias por utilizar nuestro servicios',0,1,'C');
         $pdf->Output();
       }
     }

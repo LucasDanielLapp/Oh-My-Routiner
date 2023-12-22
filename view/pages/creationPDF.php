@@ -28,8 +28,10 @@
                 <td><div class="table"></div></td>
             </tr>
         </table>
-        <button type="button" class="addInput" name="#" id="#">+</button>
-        <button type="submit" class="listo">¡ Listo !</button>
+        <div class="conteiner">
+            <button type="button" class="addInput btn btn-success" name="#" id="#" >+</button>
+            <button type="submit" class="listo  btn btn-success">¡ Listo !</button>
+        </div>
         <div class="rowAndColumn"></div>
     </form>
     <script src="resource/js/creationPDF.js"></script>

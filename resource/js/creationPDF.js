@@ -26,7 +26,7 @@ function crearInput(){
           rows += 1;
          // Aquí puedes realizar operaciones con cada elemento seleccionado, por ejemplo:
          // Agregar contenido, modificar estilos, etc.
-         elemento.innerHTML +='<td><input type="text" name="rows'+rows+'" placeholder="Task '+ rows +'"></td>';
+         elemento.innerHTML +='<td><input type="text" name="rows'+rows+'" placeholder="Task '+ rows +'" class="Task"></td>';
      });
      columns += 1;
      tableNum.innerHTML +='<td><input type="time" name="columns'+columns+'"></td>';     
