@@ -1,6 +1,6 @@
-<?php 
-if($res = 'view/pages/result.php'){
-        $cssName = 'result';
+<?php
+if(isset($_GET['action'])){
+        $cssName = 'creationPDF';
 }else{
       $cssName = "home";
 }
@@ -14,9 +14,13 @@ if($res = 'view/pages/result.php'){
     mucho mejor nuestro timepo. Permitìendonos incluso poder descargarlo para siempre tener a mano nuestra rutina personlizable.">
     <meta name="keywords" content="oh my routiner">
     <meta name="robots" content="index"/>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="resource/bootstrap5/css/bootstrap.min.css">
+    <!--Style native -->
     <link rel="stylesheet" type="text/css" href="resource/css/<?php echo $cssName; ?>.css">
     <title>oh my routiner</title>
 </head>
 <body>
+<script src="resource/bootstrap5/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

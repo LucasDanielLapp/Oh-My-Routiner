@@ -2,7 +2,7 @@
     <form action="index.php" method="GET">
     <h1 name="cd">Tu PDF</h1>
 
-        <table border="1">
+        <table border="1"  class="container table table-dark">
             <tr> <!-- Primera fila -->
                 <td>hora</td>
                 <td>Lunes</td>

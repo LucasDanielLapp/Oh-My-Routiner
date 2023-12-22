@@ -7,8 +7,6 @@
         $module = "view/pages/".$enlace.".php" ;
       }else{
         $module = "view/pages/"."Home".".php";
-      }if(isset($_GET['columns'])){
-        return $module = 'view/pages/result.php';
       }
        return $module;
     }
