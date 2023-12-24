@@ -13,7 +13,6 @@
     public static function CreationPDF(){
       if(isset($_GET['columns'])){
         //the velue dad
-        
         $columns = $_GET['columns'];
         $rows = $_GET['rows'];
         $pdf = new FPDF();
@@ -45,7 +44,7 @@
           }
         }
         $pdf->setX(25);
-        $pdf->Cell(32,10,'Gracias por utilizar nuestro servicios',0,1,'C');
+        $pdf->Cell(32,10,'Gracias por utilizar nuestro servicios.',0,1,'C');
         $pdf->Output();
       }
     }

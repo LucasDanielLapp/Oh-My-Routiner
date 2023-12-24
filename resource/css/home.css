@@ -1,3 +1,19 @@
+/*Navegador*/
+ul{
+    flex-direction: row;
+    list-style: none;
+}
+li{
+    display: inline-block;
+}
+a{
+    color:#d3d3d3;   
+}
+a:hover{
+    transition: all 1s;
+    color:rgb(255, 189, 90);
+}
+
 /*Main*/
 body,html{
     margin: 0;
@@ -7,10 +23,13 @@ body,html{
     height: 100%;
 }
 main{
-    padding-top: 8%;
+    padding-top: 5%;
     margin-left: 35%;
 }
 h1{
+    color:white;
+}
+h2{
     color:white;
 }
 .intro{
@@ -19,7 +38,7 @@ h1{
     margin-left: -10%;
     width:60%;
 }
-/**/
+/*button*/
 .btn{
     margin: 5%;
     margin-left:12%;
