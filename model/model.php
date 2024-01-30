@@ -38,7 +38,7 @@
             $pdf->Cell(32,10,utf8_decode($Task),1,0,'C');
           }else{
             $pdf->Cell(32,10,utf8_decode($Task),1,0,'C');
-          }if($j % 5 == 0){
+          }if($j % 5 == 0){//Cada 5 filas, salta de linea
             $pdf->Cell(32,10,utf8_decode($Task),0,1,'C');
             $pdf->setX(42,30);
           }

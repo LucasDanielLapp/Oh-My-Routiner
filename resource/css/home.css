@@ -1,45 +1,73 @@
+
+body {
+  margin: 0; /* Elimina el margen predeterminado del body */
+  height: 100vh; /* Establece la altura al 100% del viewport height */
+  background: linear-gradient(135deg, #d4224c 0%, #8f0222 44%, #6d0019 100%);
+  background-attachment: fixed; /* Fija el fondo para que no se mueva al hacer scroll */
+}
 /*Navegador*/
-ul{
+ul{ 
+    text-align:center;
     flex-direction: row;
     list-style: none;
+    margin-right:2%;
 }
 li{
+    margin-top:2%;
     display: inline-block;
 }
 a{
     color:#d3d3d3;   
+    margin:auto;
+    margin-top:2%;
+    margin-bottom:2%;
 }
 a:hover{
     transition: all 1s;
     color:rgb(255, 189, 90);
 }
-
+/*----------------------------HOME--------------------------------------------*/
 /*Main*/
-body,html{
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(135deg, #d4224c 0%,#8f0222 44%,#6d0019 100%);
-    width: 100%;
-    height: 100%;
-}
 main{
-    padding-top: 5%;
-    margin-left: 35%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
 }
 h1{
+    margin-top:2%;
+    margin-bottom:2%;
     color:white;
+    text-align:center;
 }
 h2{
     color:white;
+    text-align:center;
 }
 .intro{
+    margin-top:2%;
+    margin-left:21%;
     color:#CDCDCD;
-    margin-top: 2%;
-    margin-left: -10%;
     width:60%;
 }
 /*button*/
 .btn{
-    margin: 5%;
-    margin-left:12%;
+    justify-content: center; /* Centra horizontalmente en el eje principal */
+    align-items: center; /* Centra verticalmente en el eje secundario rightwidth: auto;*/
 }
+/*header-----------------------------------*/
+header{
+    display:flex;
+    flex-direction: column;
+    background-color:#212F3D;
+    text-align:center;
+}
+h4,p{
+    margin-top:2%;
+    padding:1%;
+    color:white;
+}
+
+
+
+
+

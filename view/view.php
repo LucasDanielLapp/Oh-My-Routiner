@@ -19,7 +19,7 @@ if(isset($_GET['action'])){
     <!--Style native -->
     <link rel="stylesheet" type="text/css" href="resource/css/<?php echo $cssName; ?>.css">
     <link rel="icon" href="resource/icon-img/icono.ico" type="image/png">
-    <title>oh my routiner</title>
+    <title>Oh My Routiner</title>
 </head>
 <body>
 <script src="resource/bootstrap5/js/bootstrap.bundle.min.js"></script>
